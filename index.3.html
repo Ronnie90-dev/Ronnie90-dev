@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Play Latest Features</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Google_Play_Arrow_logo.svg/1024px-Google_Play_Arrow_logo.svg.png" alt="Google Play Logo" class="google-logo">
+        </div>
+        <h1>Explore the Latest Features of Google Play</h1>
+    </header>
+
+    <main>
+        <section class="feature-section">
+            <div class="feature-content">
+                <img src="https://fdn.gsmarena.com/imgroot/news/24/07/google-play-collections/inline/-1200/gsmarena_001.jpg" alt="Collections Feature" class="feature-image">
+                <div class="feature-text">
+                    <h2>Collections</h2>
+                    <p>Google Play Collections makes it easier to manage your installed apps by grouping them into useful categories like shopping, viewing, and listening. Whether you're picking up where you left off in a podcast or resuming your shopping cart, Collections gives you quick access to apps tailored for your daily needs. With a streamlined interface, the new Collections feature ensures you stay organized and focused, even if you have a large number of apps installed.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-section">
+            <div class="feature-content">
+                <img src="https://chromeunboxed.com/wp-content/uploads/2023/03/image-4.png" alt="Enhanced Gaming Feature" class="feature-image">
+                <div class="feature-text">
+                    <h2>Enhanced Gaming</h2>
+                    <p>The new Enhanced Gaming feature offers personalized filters that help you discover games tailored to your interests. Whether you prefer strategy, action, or puzzle games, the updated search filters give you more control over your game discovery experience. Play Pass subscribers can now enjoy multi-device gaming, seamlessly switching between mobile and PC to keep playing without interruption. This feature redefines convenience for gaming enthusiasts.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-section">
+            <div class="feature-content">
+                <img src="https://shopon.pk/images/thumbnails/550/450/detailed/33/Google_USA.png" alt="Super Weekly Prizes" class="feature-image">
+                <div class="feature-text">
+                    <h2>Super Weekly Prizes</h2>
+                    <p>As part of Google Play’s Play Points rewards program, Super Weekly Prizes give you more chances to win! By earning Play Points, you can enter to win exciting prizes, including Google Pixel devices, gaming accessories, and more. The updated system offers better rewards and enhances the overall gaming experience for avid users. Every week brings new opportunities, keeping users engaged and rewarded just for using their favorite apps.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-section">
+            <div class="feature-content">
+                <img src="https://www.androidfaithful.com/content/images/2024/07/Google_Play_Pass.png" alt="Comics Section" class="feature-image">
+                <div class="feature-text">
+                    <h2>Comics Section</h2>
+                    <p>Dive into the world of comics with Google Play's brand-new Comics Section. Explore curated content from top creators, and read preview chapters of trending comics right in the Play Store. The Comics Section is designed to make it easy to discover new series and offers personalized recommendations based on your reading preferences. Whether you are into superheroes, romance, or fantasy, the dedicated area brings the best of the comic world to your device.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-section">
+            <div class="feature-content">
+                <img src="https://i.cdn.newsbytesapp.com/images/l37920240612120644.jpeg" alt="AI-Powered Insights" class="feature-image">
+                <div class="feature-text">
+                    <h2>AI-Powered Insights</h2>
+                    <p>Google Play's AI-Powered Insights feature provides intelligent app reviews and comparisons, saving users time and effort when making download decisions. Using AI, it generates personalized reviews based on your app usage and compares apps in similar categories to help you find the best options faster. The AI continuously learns from user behavior to refine recommendations, ensuring that you always get the most accurate and relevant insights.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-section">
+            <div class="feature-content">
+                <img src="https://larepublica.cronosmedia.glr.pe/original/2024/08/14/66bcead7fa863d3da126acc0.jpg" alt="Personalized Control" class="feature-image">
+                <div class="feature-text">
+                    <h2>Personalized Control</h2>
+                    <p>Google Play now gives you full control over your app recommendations with the new Personalized Control feature. You can decide which apps influence your recommended content, allowing for a more curated and personal experience. Whether you want to prioritize work-related apps or entertainment, Personalized Control helps you manage your preferences, giving you a Play Store experience that truly reflects your needs.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="google-play-footer">Google <span class="colorful">P</span><span class="colorful">l</span><span class="colorful">a</span><span class="colorful">y</span></p>
+        <p>&copy; 2024 Google Play. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('.feature-section');
+
+            const options = {
+                root: null,
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
